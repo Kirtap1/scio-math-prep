@@ -1,0 +1,184 @@
+:root {
+    /* Professional Minimalist Dark Palette */
+    --bg-color: #181818;
+    --text-main: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --border-color: #333333;
+    
+    /* State Colors */
+    --btn-hover: #242424;
+    --btn-selected-bg: #22222d;
+    --btn-selected-border: #5c6bc0;
+    
+    --correct-bg: #1b3320;
+    --correct-border: #4caf50;
+    --correct-text: #a5d6a7;
+    
+    --wrong-bg: #3b1c1c;
+    --wrong-border: #f44336;
+    --wrong-text: #ef9a9a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Highly readable sans-serif stack */
+    font-family: 'Inter', system-ui, -apple-system, Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.prep-main {
+    width: 100%;
+    max-width: 720px;
+    padding: 40px 20px;
+    margin: 40px auto;
+}
+
+.question-container {
+    margin-bottom: 40px;
+}
+
+#question-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--text-main);
+}
+
+.options-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.option-btn {
+    padding: 18px 24px;
+    font-size: 1.1rem;
+    color: var(--text-main);
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-align: left;
+}
+
+.option-btn:hover:not(:disabled) {
+    background-color: var(--btn-hover);
+}
+
+/* State: Option Selected (before checking) */
+.option-btn.selected {
+    border: 2px solid var(--btn-selected-border);
+    background-color: var(--btn-selected-bg);
+    font-weight: 600;
+    padding: 17px 23px; /* Prevents layout shift from thicker border */
+}
+
+/* State: Correct / Incorrect (after checking) */
+.option-btn.correct {
+    background-color: var(--correct-bg) !important;
+    border: 2px solid var(--correct-border) !important;
+    color: var(--correct-text) !important;
+    font-weight: 600;
+}
+
+.option-btn.wrong {
+    background-color: var(--wrong-bg) !important;
+    border: 2px solid var(--wrong-border) !important;
+    color: var(--wrong-text) !important;
+}
+
+.option-btn:disabled {
+    cursor: default;
+}
+
+.action-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 32px;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.primary-btn {
+    background-color: #e0e0e0;
+    color: #181818;
+    border: none;
+}
+
+.primary-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #e0e0e0;
+    border: 1px solid #555555;
+}
+
+.secondary-btn:hover {
+    background-color: #242424;
+}
+
+.solution-section {
+    margin-top: 40px;
+    padding: 24px;
+    background-color: #222222;
+    border-radius: 12px;
+}
+
+.solution-title {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 12px;
+}
+
+.solution-text {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 500px) {
+    .prep-main {
+        padding: 20px;
+        margin: 10px auto;
+    }
+    #question-text {
+        font-size: 1.3rem;
+    }
+    .option-btn {
+        padding: 16px 20px;
+        font-size: 1rem;
+    }
+    .action-container {
+        justify-content: stretch;
+    }
+    .primary-btn, .secondary-btn {
+        width: 100%;
+    }
+}

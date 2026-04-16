@@ -1,0 +1,1352 @@
+[
+  {
+    "id": 1,
+    "topic": "Množiny a logika",
+    "difficulty": "střední",
+    "question": "Rozdílem $A \\setminus B$ množiny $A$ všech celých čísel z intervalu $\\langle -3; 5 \\rangle$ a množiny $B$ všech přirozených čísel je množina:",
+    "options": [
+      "A) $\\{-3, -2, -1, 0, 1, 2, 3, 4, 5\\}$",
+      "B) $\\{-3, -2, -1\\}$",
+      "C) $\\{-3, -2, -1, 0\\}$",
+      "D) prázdná množina",
+      "E) $\\{1, 2, 3, 4, 5\\}$"
+    ],
+    "correctIndex": 2,
+    "tip": "Množina A obsahuje celá čísla z daného intervalu: {-3, -2, -1, 0, 1, 2, 3, 4, 5}. Množina B jsou přirozená čísla {1, 2, 3, ...}. Rozdíl $A \\setminus B$ vyjme z A všechny prvky, které jsou v B. Nula není přirozené číslo (v české matematické tradici). Správný výsledek je tedy {-3, -2, -1, 0}."
+  },
+  {
+    "id": 2,
+    "topic": "Výroková logika",
+    "difficulty": "střední",
+    "question": "Nechť výrok $p$ zní: 'Číslo 15 je dělitelné třemi.' a výrok $q$ zní: 'Číslo 15 je prvočíslo.' Který z následujících složených výroků je nepravdivý?",
+    "options": [
+      "A) $p \\lor q$",
+      "B) $q \\Rightarrow p$",
+      "C) $\\neg q \\Rightarrow p$",
+      "D) $p \\land q$",
+      "E) $p \\Leftrightarrow \\neg q$"
+    ],
+    "correctIndex": 3,
+    "tip": "Výrok $p$: 15 je dělitelné 3 (Pravda). Výrok $q$: 15 je prvočíslo (Nepravda, $15 = 3 \\times 5$). Hledáme nepravdivý výrok z nabízených. Konjunkce ($p \\land q$) vyžaduje, aby byly oba výroky pravdivé. Protože $q$ je nepravda, celý složený výrok $p \\land q$ je nepravdivý."
+  },
+  {
+    "id": 3,
+    "topic": "Výroková logika",
+    "difficulty": "střední",
+    "question": "Negací výroku „Všechny rovnice mají alespoň jeden reálný kořen.“ je výrok:",
+    "options": [
+      "A) Žádná rovnice nemá reálný kořen.",
+      "B) Všechny rovnice mají pouze komplexní kořeny.",
+      "C) Alespoň jedna rovnice nemá žádný reálný kořen.",
+      "D) Existuje právě jedna rovnice, která nemá reálný kořen.",
+      "E) Některé rovnice mají právě jeden reálný kořen."
+    ],
+    "correctIndex": 2,
+    "tip": "Obecný výrok je tvaru $\\forall x: V(x)$ (Všechny...). Jeho negací je existenční výrok s negovanou vlastností $\\exists x: \\neg V(x)$. To znamená: 'Existuje alespoň jedna rovnice, která nemá žádný reálný kořen.'"
+  },
+  {
+    "id": 4,
+    "topic": "Nerovnice",
+    "difficulty": "střední",
+    "question": "Množina všech reálných čísel, pro která současně platí nerovnosti $2x - 3 < 5$ a $4 - x \\le 6$, je rovna intervalu:",
+    "options": [
+      "A) $\\langle -2; 4)$",
+      "B) $(-2; 4\\rangle$",
+      "C) $(-\\infty; 4)$",
+      "D) $\\langle -2; \\infty)$",
+      "E) prázdná množina"
+    ],
+    "correctIndex": 0,
+    "tip": "Z první nerovnice: $2x < 8 \\Rightarrow x < 4$. Z druhé nerovnice: $-x \\le 2 \\Rightarrow x \\ge -2$. Průnik obou podmínek, tedy logická konjunkce, je interval $\\langle -2; 4)$."
+  },
+  {
+    "id": 5,
+    "topic": "Kombinatorika a množiny",
+    "difficulty": "střední",
+    "question": "Kolik existuje podmnožin čtyřprvkové množiny $M = \\{a, b, c, d\\}$, které obsahují prvek $a$?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 12",
+      "E) 16"
+    ],
+    "correctIndex": 2,
+    "tip": "Tvorba podmnožiny, která vždy obsahuje prvek $a$, se redukuje na otázku: Kolik podmnožin mohu vytvořit ze zbývajících tří prvků $\\{b, c, d\\}$? Počet podmnožin n-prvkové množiny je $2^n$. Pro 3 prvky je to $2^3 = 8$. Ke každé z nich přidáme napevno prvek $a$."
+  },
+  {
+    "id": 6,
+    "topic": "Množiny",
+    "difficulty": "těžká",
+    "question": "Pro množiny $X, Y, Z$ platí: $X \\subset Y$ a $Y \\cap Z = \\emptyset$. Které tvrzení vyplývá z těchto předpokladů s absolutní jistotou?",
+    "options": [
+      "A) $X \\cup Z = Y$",
+      "B) $X \\cap Z = \\emptyset$",
+      "C) $Z \\subset X$",
+      "D) $X \\subset Z$",
+      "E) $X = Y$"
+    ],
+    "correctIndex": 1,
+    "tip": "Vennův diagram: Množina Z je mimo Y (protože nemají průnik). Protože X je kompletně uvnitř Y, nesmí mít ani X s množinou Z žádný průnik. Tedy $X \\cap Z = \\emptyset$."
+  },
+  {
+    "id": 7,
+    "topic": "Nerovnice s absolutní hodnotou",
+    "difficulty": "střední",
+    "question": "Který z následujících intervalů odpovídá množině řešení nerovnice $|x - 2| \\le 3$?",
+    "options": [
+      "A) $(-\\infty; 5\\rangle$",
+      "B) $\\langle -1; 5 \\rangle$",
+      "C) $\\langle -5; 1 \\rangle$",
+      "D) $\\langle 1; 5 \\rangle$",
+      "E) $(-1; 5)$"
+    ],
+    "correctIndex": 1,
+    "tip": "Absolutní hodnota $|x - 2| \\le 3$ znamená, že vzdálenost bodu $x$ od bodu 2 na číselné ose je maximálně 3. Tedy $2 - 3 \\le x \\le 2 + 3$, což dává $-1 \\le x \\le 5$. Interval $\\langle -1; 5 \\rangle$."
+  },
+  {
+    "id": 8,
+    "topic": "Množiny (Slovní úlohy)",
+    "difficulty": "střední",
+    "question": "Ve třídě je 30 studentů. Z toho 18 hraje fotbal a 14 hraje florbal. Pět studentů nehraje ani jeden z těchto sportů. Kolik studentů hraje pouze fotbal?",
+    "options": [
+      "A) 7",
+      "B) 9",
+      "C) 11",
+      "D) 13",
+      "E) 18"
+    ],
+    "correctIndex": 2,
+    "tip": "Princip inkluze a exkluze: 30 studentů, 5 nesportuje, sportuje jich $30 - 5 = 25$. $N(F \\cup Fl) = N(F) + N(Fl) - N(F \\cap Fl)$. Po dosazení $25 = 18 + 14 - x$, takže $x = 7$ (hrají oba sporty). Pouze fotbal hraje $18 - 7 = 11$ studentů."
+  },
+  {
+    "id": 9,
+    "topic": "Teorie čísel a dělitelnost",
+    "difficulty": "těžká",
+    "question": "Určete nejmenší přirozené číslo $n$, které po dělení třemi dává zbytek 1, po dělení čtyřmi zbytek 1 a po dělení pěti zbytek 1, přičemž $n > 1$.",
+    "options": [
+      "A) 31",
+      "B) 41",
+      "C) 61",
+      "D) 121",
+      "E) 181"
+    ],
+    "correctIndex": 2,
+    "tip": "Hledané číslo má tvar $n = k \\cdot NSN(3, 4, 5) + 1$. Nejmenší společný násobek pro 3, 4, a 5 je $3 \\times 4 \\times 5 = 60$. Nejmenší $n > 1$ dostaneme pro $k = 1$, tedy $n = 60 + 1 = 61$."
+  },
+  {
+    "id": 10,
+    "topic": "Množiny a nerovnice",
+    "difficulty": "střední",
+    "question": "Jsou dány množiny $K = \\{x \\in \\mathbb{R}; x^2 < 9\\}$ a $L = \\{x \\in \\mathbb{R}; x \\ge 0\\}$. Průnikem $K \\cap L$ je:",
+    "options": [
+      "A) $\\langle 0; 3)$",
+      "B) $(0; 3)$",
+      "C) $\\langle 0; 9)$",
+      "D) $(-3; \\infty)$",
+      "E) prázdná množina"
+    ],
+    "correctIndex": 0,
+    "tip": "K množině K: $x^2 < 9 \\Rightarrow -3 < x < 3$. Množina L: $x \\ge 0$. Průnik těchto dvou podmínek je interval zleva uzavřený a zprava otevřený $\\langle 0; 3)$."
+  },
+  {
+    "id": 1,
+    "topic": "Množiny a logika",
+    "difficulty": "střední",
+    "question": "Rozdílem $A \\setminus B$ množiny $A$ všech celých čísel z intervalu $\\langle -3; 5 \\rangle$ a množiny $B$ všech přirozených čísel je množina:",
+    "options": [
+      "A) $\\{-3, -2, -1, 0, 1, 2, 3, 4, 5\\}$",
+      "B) $\\{-3, -2, -1\\}$",
+      "C) $\\{-3, -2, -1, 0\\}$",
+      "D) prázdná množina",
+      "E) $\\{1, 2, 3, 4, 5\\}$"
+    ],
+    "correctIndex": 2,
+    "tip": "Množina A obsahuje celá čísla z daného intervalu: {-3, -2, -1, 0, 1, 2, 3, 4, 5}. Množina B jsou přirozená čísla {1, 2, 3, ...}. Rozdíl $A \\setminus B$ vyjme z A všechny prvky, které jsou v B. Nula není přirozené číslo (v české matematické tradici). Správný výsledek je tedy {-3, -2, -1, 0}."
+  },
+  {
+    "id": 2,
+    "topic": "Výroková logika",
+    "difficulty": "střední",
+    "question": "Nechť výrok $p$ zní: 'Číslo 15 je dělitelné třemi.' a výrok $q$ zní: 'Číslo 15 je prvočíslo.' Který z následujících složených výroků je nepravdivý?",
+    "options": [
+      "A) $p \\lor q$",
+      "B) $q \\Rightarrow p$",
+      "C) $\\neg q \\Rightarrow p$",
+      "D) $p \\land q$",
+      "E) $p \\Leftrightarrow \\neg q$"
+    ],
+    "correctIndex": 3,
+    "tip": "Výrok $p$: 15 je dělitelné 3 (Pravda). Výrok $q$: 15 je prvočíslo (Nepravda, $15 = 3 \\times 5$). Hledáme nepravdivý výrok z nabízených. Konjunkce ($p \\land q$) vyžaduje, aby byly oba výroky pravdivé. Protože $q$ je nepravda, celý složený výrok $p \\land q$ je nepravdivý."
+  },
+  {
+    "id": 3,
+    "topic": "Výroková logika",
+    "difficulty": "střední",
+    "question": "Negací výroku „Všechny rovnice mají alespoň jeden reálný kořen.“ je výrok:",
+    "options": [
+      "A) Žádná rovnice nemá reálný kořen.",
+      "B) Všechny rovnice mají pouze komplexní kořeny.",
+      "C) Alespoň jedna rovnice nemá žádný reálný kořen.",
+      "D) Existuje právě jedna rovnice, která nemá reálný kořen.",
+      "E) Některé rovnice mají právě jeden reálný kořen."
+    ],
+    "correctIndex": 2,
+    "tip": "Obecný výrok je tvaru $\\forall x: V(x)$ (Všechny...). Jeho negací je existenční výrok s negovanou vlastností $\\exists x: \\neg V(x)$. To znamená: 'Existuje alespoň jedna rovnice, která nemá žádný reálný kořen.'"
+  },
+  {
+    "id": 4,
+    "topic": "Nerovnice",
+    "difficulty": "střední",
+    "question": "Množina všech reálných čísel, pro která současně platí nerovnosti $2x - 3 < 5$ a $4 - x \\le 6$, je rovna intervalu:",
+    "options": [
+      "A) $\\langle -2; 4)$",
+      "B) $(-2; 4\\rangle$",
+      "C) $(-\\infty; 4)$",
+      "D) $\\langle -2; \\infty)$",
+      "E) prázdná množina"
+    ],
+    "correctIndex": 0,
+    "tip": "Z první nerovnice: $2x < 8 \\Rightarrow x < 4$. Z druhé nerovnice: $-x \\le 2 \\Rightarrow x \\ge -2$. Průnik obou podmínek, tedy logická konjunkce, je interval $\\langle -2; 4)$."
+  },
+  {
+    "id": 5,
+    "topic": "Kombinatorika a množiny",
+    "difficulty": "střední",
+    "question": "Kolik existuje podmnožin čtyřprvkové množiny $M = \\{a, b, c, d\\}$, které obsahují prvek $a$?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 12",
+      "E) 16"
+    ],
+    "correctIndex": 2,
+    "tip": "Tvorba podmnožiny, která vždy obsahuje prvek $a$, se redukuje na otázku: Kolik podmnožin mohu vytvořit ze zbývajících tří prvků $\\{b, c, d\\}$? Počet podmnožin n-prvkové množiny je $2^n$. Pro 3 prvky je to $2^3 = 8$. Ke každé z nich přidáme napevno prvek $a$."
+  },
+  {
+    "id": 6,
+    "topic": "Množiny",
+    "difficulty": "těžká",
+    "question": "Pro množiny $X, Y, Z$ platí: $X \\subset Y$ a $Y \\cap Z = \\emptyset$. Které tvrzení vyplývá z těchto předpokladů s absolutní jistotou?",
+    "options": [
+      "A) $X \\cup Z = Y$",
+      "B) $X \\cap Z = \\emptyset$",
+      "C) $Z \\subset X$",
+      "D) $X \\subset Z$",
+      "E) $X = Y$"
+    ],
+    "correctIndex": 1,
+    "tip": "Vennův diagram: Množina Z je mimo Y (protože nemají průnik). Protože X je kompletně uvnitř Y, nesmí mít ani X s množinou Z žádný průnik. Tedy $X \\cap Z = \\emptyset$."
+  },
+  {
+    "id": 7,
+    "topic": "Nerovnice s absolutní hodnotou",
+    "difficulty": "střední",
+    "question": "Který z následujících intervalů odpovídá množině řešení nerovnice $|x - 2| \\le 3$?",
+    "options": [
+      "A) $(-\\infty; 5\\rangle$",
+      "B) $\\langle -1; 5 \\rangle$",
+      "C) $\\langle -5; 1 \\rangle$",
+      "D) $\\langle 1; 5 \\rangle$",
+      "E) $(-1; 5)$"
+    ],
+    "correctIndex": 1,
+    "tip": "Absolutní hodnota $|x - 2| \\le 3$ znamená, že vzdálenost bodu $x$ od bodu 2 na číselné ose je maximálně 3. Tedy $2 - 3 \\le x \\le 2 + 3$, což dává $-1 \\le x \\le 5$. Interval $\\langle -1; 5 \\rangle$."
+  },
+  {
+    "id": 8,
+    "topic": "Množiny (Slovní úlohy)",
+    "difficulty": "střední",
+    "question": "Ve třídě je 30 studentů. Z toho 18 hraje fotbal a 14 hraje florbal. Pět studentů nehraje ani jeden z těchto sportů. Kolik studentů hraje pouze fotbal?",
+    "options": [
+      "A) 7",
+      "B) 9",
+      "C) 11",
+      "D) 13",
+      "E) 18"
+    ],
+    "correctIndex": 2,
+    "tip": "Princip inkluze a exkluze: 30 studentů, 5 nesportuje, sportuje jich $30 - 5 = 25$. $N(F \\cup Fl) = N(F) + N(Fl) - N(F \\cap Fl)$. Po dosazení $25 = 18 + 14 - x$, takže $x = 7$ (hrají oba sporty). Pouze fotbal hraje $18 - 7 = 11$ studentů."
+  },
+  {
+    "id": 9,
+    "topic": "Teorie čísel a dělitelnost",
+    "difficulty": "těžká",
+    "question": "Určete nejmenší přirozené číslo $n$, které po dělení třemi dává zbytek 1, po dělení čtyřmi zbytek 1 a po dělení pěti zbytek 1, přičemž $n > 1$.",
+    "options": [
+      "A) 31",
+      "B) 41",
+      "C) 61",
+      "D) 121",
+      "E) 181"
+    ],
+    "correctIndex": 2,
+    "tip": "Hledané číslo má tvar $n = k \\cdot NSN(3, 4, 5) + 1$. Nejmenší společný násobek pro 3, 4, a 5 je $3 \\times 4 \\times 5 = 60$. Nejmenší $n > 1$ dostaneme pro $k = 1$, tedy $n = 60 + 1 = 61$."
+  },
+  {
+    "id": 10,
+    "topic": "Množiny a nerovnice",
+    "difficulty": "střední",
+    "question": "Jsou dány množiny $K = \\{x \\in \\mathbb{R}; x^2 < 9\\}$ a $L = \\{x \\in \\mathbb{R}; x \\ge 0\\}$. Průnikem $K \\cap L$ je:",
+    "options": [
+      "A) $\\langle 0; 3)$",
+      "B) $(0; 3)$",
+      "C) $\\langle 0; 9)$",
+      "D) $(-3; \\infty)$",
+      "E) prázdná množina"
+    ],
+    "correctIndex": 0,
+    "tip": "K množině K: $x^2 < 9 \\Rightarrow -3 < x < 3$. Množina L: $x \\ge 0$. Průnik těchto dvou podmínek je interval zleva uzavřený a zprava otevřený $\\langle 0; 3)$."
+  },
+  {
+    "id": 31,
+    "topic": "Logaritmické rovnice",
+    "difficulty": "střední",
+    "question": "Hodnota reálného čísla $x$, která splňuje rovnici $\\log_2(x) + \\log_2(x-3) = 2$, je:",
+    "options": [
+      "A) 4",
+      "B) $-1$",
+      "C) 1 a 4",
+      "D) 4 a $-1$",
+      "E) 2"
+    ],
+    "correctIndex": 0,
+    "tip": "Definiční obor vyžaduje $x > 0$ a $x > 3$, tedy $x \\in (3; \\infty)$. Použití pravidel: $\\log_2(x(x-3)) = 2 \\Rightarrow x^2 - 3x = 2^2 = 4 \\Rightarrow x^2 - 3x - 4 = 0$. Kořeny rovnice jsou 4 a -1. Bod -1 nevyhovuje def. oboru. Zbývá pouze 4."
+  },
+  {
+    "id": 32,
+    "topic": "Definiční obor logaritmu",
+    "difficulty": "lehká",
+    "question": "Definiční obor funkce $f(x) = \\log_{0.5}(4 - x^2)$ je roven:",
+    "options": [
+      "A) $(-\\infty; -2) \\cup (2; \\infty)$",
+      "B) $\\langle -2; 2 \\rangle$",
+      "C) $(-2; 2)$",
+      "D) $(0; 2)$",
+      "E) $(0; \\infty)$"
+    ],
+    "correctIndex": 2,
+    "tip": "Definiční obor argumentu logaritmu nesmí být záporný ani nulový. $4 - x^2 > 0 \\Rightarrow 4 > x^2 \\Rightarrow -2 < x < 2$. Tedy interval $(-2; 2)$."
+  },
+  {
+    "id": 33,
+    "topic": "Exponenciální rovnice",
+    "difficulty": "střední",
+    "question": "Řešením exponenciální rovnice $3^{x+2} + 3^{x-1} = 252$ je číslo:",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4",
+      "E) 5"
+    ],
+    "correctIndex": 2,
+    "tip": "Vytkneme výraz $3^{x-1}$: $3^{x-1}(3^3 + 1) = 252 \\Rightarrow 3^{x-1}(27 + 1) = 252 \\Rightarrow 3^{x-1} \\cdot 28 = 252 \\Rightarrow 3^{x-1} = 9 \\Rightarrow 3^{x-1} = 3^2 \\Rightarrow x-1 = 2 \\Rightarrow x = 3$."
+  },
+  {
+    "id": 34,
+    "topic": "Logaritmy",
+    "difficulty": "střední",
+    "question": "Pro základy logaritmů platí inverzní vztahy. Hodnota výrazu $\\log_8(16) \\cdot \\log_4(8)$ je:",
+    "options": [
+      "A) $\\frac{3}{2}$",
+      "B) 2",
+      "C) $\\frac{8}{3}$",
+      "D) 3",
+      "E) 4"
+    ],
+    "correctIndex": 1,
+    "tip": "$\\log_8(16) = y \\Rightarrow 8^y = 16 \\Rightarrow 2^{3y} = 2^4 \\Rightarrow y = 4/3$. Podobně $\\log_4(8) = z \\Rightarrow 4^z = 8 \\Rightarrow 2^{2z} = 2^3 \\Rightarrow z = 3/2$. Součin $\\frac{4}{3} \\cdot \\frac{3}{2} = 2$."
+  },
+  {
+    "id": 35,
+    "topic": "Vlastnosti funkcí",
+    "difficulty": "lehká",
+    "question": "Která z následujících funkcí je klesající na celém svém definičním oboru?",
+    "options": [
+      "A) $y = 2^x$",
+      "B) $y = \\log_2(x)$",
+      "C) $y = (\\frac{2}{3})^x$",
+      "D) $y = x^2$",
+      "E) $y = \\log(x)$"
+    ],
+    "correctIndex": 2,
+    "tip": "Exponenciální funkce $y = a^x$ je klesající, jestliže její základ $a$ spadá do intervalu $(0; 1)$. Zlomek $2/3$ tuto podmínku splňuje. Funkce s logaritmy o základu $>1$ a $x^2$ nejsou trvale klesající."
+  },
+  {
+    "id": 36,
+    "topic": "Inverzní funkce",
+    "difficulty": "střední",
+    "question": "Inverzní funkcí k funkci $f(x) = 10^{x-1} + 2$ je funkce určená předpisem:",
+    "options": [
+      "A) $f^{-1}(x) = \\log(x - 2) + 1$",
+      "B) $f^{-1}(x) = \\log(x - 1) + 2$",
+      "C) $f^{-1}(x) = \\log(x + 2) - 1$",
+      "D) $f^{-1}(x) = 10^{x+1} - 2$",
+      "E) Funkce $f$ není prostá, inverzní k ní neexistuje."
+    ],
+    "correctIndex": 0,
+    "tip": "Inverzní funkci získáme záměnou $x$ a $y$: $x = 10^{y-1} + 2$. Odstraníme zbytek osamostatněním exponenciály: $x - 2 = 10^{y-1}$. Následně zlogaritmujeme obě strany: $\\log(x-2) = y-1 \\Rightarrow y = \\log(x-2) + 1$."
+  },
+  {
+    "id": 37,
+    "topic": "Exponenciální rovnice",
+    "difficulty": "těžká",
+    "question": "Rovnice $2^{2x} - 5 \\cdot 2^x + 4 = 0$ má v oboru reálných čísel řešení tvořené množinou:",
+    "options": [
+      "A) $\\{1, 4\\}$",
+      "B) $\\{0, 2\\}$",
+      "C) $\\{2\\}$",
+      "D) $\\{-1, 2\\}$",
+      "E) $\\{0\\}$"
+    ],
+    "correctIndex": 1,
+    "tip": "Provedeme substituci $t = 2^x$. Rovnice přejde na $t^2 - 5t + 4 = 0$. Kořeny kvadratické rovnice jsou $t_1 = 4$ a $t_2 = 1$. Zpětnou substitucí získáváme $2^x = 4 \\Rightarrow x=2$ a $2^x = 1 \\Rightarrow x=0$. Řešení tvoří množina $\\{0, 2\\}$."
+  },
+  {
+    "id": 38,
+    "topic": "Úpravy výrazů",
+    "difficulty": "lehká",
+    "question": "Výraz $10^{1 + \\log 5}$ lze upravit na celé číslo, jehož hodnota je:",
+    "options": [
+      "A) 5",
+      "B) 15",
+      "C) 50",
+      "D) 105",
+      "E) 500"
+    ],
+    "correctIndex": 2,
+    "tip": "Součet v exponentu lze přepsat na součin základů: $10^1 \\cdot 10^{\\log 5}$. Druhý činitel využívá pravidla o inverzních operacích a rovná se 5. Součin $10 \\times 5 = 50$."
+  },
+  {
+    "id": 39,
+    "topic": "Exponenciální nerovnice",
+    "difficulty": "střední",
+    "question": "Řešením nerovnice $\\left(\\frac{1}{3}\\right)^x \\ge 9$ je interval:",
+    "options": [
+      "A) $\\langle 2; \\infty)$",
+      "B) $(-\\infty; 2\\rangle$",
+      "C) $\\langle -2; \\infty)$",
+      "D) $(-\\infty; -2\\rangle$",
+      "E) $(-2; 2)$"
+    ],
+    "correctIndex": 3,
+    "tip": "$1/3$ zapíšeme jako $3^{-1}$, 9 jako $3^2$. Původní nerovnici upravíme: $3^{-x} \\ge 3^2$. Protože základ 3 je větší než jedna, znak nerovnosti zachováme: $-x \\ge 2 \\Rightarrow x \\le -2$. Interval odpovídá $(-\\infty; -2\\rangle$."
+  },
+  {
+    "id": 40,
+    "topic": "Logaritmické funkce",
+    "difficulty": "těžká",
+    "question": "Průsečík grafu funkce $f(x) = \\ln(x - e) + 1$ s osou $x$ má souřadnice:",
+    "options": [
+      "A) $[e; 0]$",
+      "B) $[e + \\frac{1}{e}; 0]$",
+      "C) $[\\frac{1}{e}; 0]$",
+      "D) $[2e; 0]$",
+      "E) Graf osu x neprotíná."
+    ],
+    "correctIndex": 1,
+    "tip": "Průsečík s osou $x$ znamená, že položíme $y=0$. Tedy $\\ln(x-e) + 1 = 0 \\Rightarrow \\ln(x-e) = -1$. Odlogaritmujeme: $x-e = e^{-1} \\Rightarrow x-e = \\frac{1}{e} \\Rightarrow x = e + \\frac{1}{e}$."
+  },
+  {
+    "id": 41,
+    "topic": "Goniometrické rovnice",
+    "difficulty": "střední",
+    "question": "Kolik řešení má rovnice $\\sin(2x) = 1$ na intervalu $\\langle 0; 2\\pi \\rangle$?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4",
+      "E) 0"
+    ],
+    "correctIndex": 1,
+    "tip": "Substituce $2x = y$. Hledáme pro která $y$ platí $\\sin y = 1$ na intervalu $\\langle 0; 4\\pi \\rangle$. To je $y = \\pi/2$ a $y = 5\\pi/2$. Zpět na $x$: $x_1 = \\pi/4$, $x_2 = 5\\pi/4$. Jsou to přesně 2 řešení."
+  },
+  {
+    "id": 42,
+    "topic": "Goniometrie v trojúhelníku",
+    "difficulty": "lehká",
+    "question": "Je-li $\\operatorname{tg} \\alpha = \\frac{3}{4}$ a úhel $\\alpha \\in (0; \\frac{\\pi}{2})$, pak hodnota $\\cos \\alpha$ je:",
+    "options": [
+      "A) $\\frac{3}{5}$",
+      "B) $\\frac{4}{5}$",
+      "C) $\\frac{5}{4}$",
+      "D) $\\frac{4}{3}$",
+      "E) $\\frac{1}{5}$"
+    ],
+    "correctIndex": 1,
+    "tip": "Nakreslíme si pomocný pravoúhlý trojúhelník. Úhel $\\alpha$ má protilehlou odvěsnu 3 a přilehlou 4. Pomocí Pythagorovy věty je přepona rovna $\\sqrt{3^2 + 4^2} = 5$. Kosinus je poměr přilehlé ku přeponě $\\Rightarrow 4/5$."
+  },
+  {
+    "id": 43,
+    "topic": "Úpravy goniometrických výrazů",
+    "difficulty": "střední",
+    "question": "Zjednodušte výraz $\\frac{\\cos^2 x}{1 + \\sin x}$ pro všechna $x$, kde má výraz smysl.",
+    "options": [
+      "A) $1 + \\sin x$",
+      "B) $1 - \\sin x$",
+      "C) $1 + \\cos x$",
+      "D) $1 - \\cos x$",
+      "E) $\\operatorname{tg} x$"
+    ],
+    "correctIndex": 1,
+    "tip": "Goniometrická jednička $\\sin^2 x + \\cos^2 x = 1$ implikuje $\\cos^2 x = 1 - \\sin^2 x$. V čitateli aplikujeme rozdíl čtverců $(1-\\sin x)(1+\\sin x)$. Pokrácením vůči jmenovateli zbude pouze $1 - \\sin x$."
+  },
+  {
+    "id": 44,
+    "topic": "Goniometrické funkce",
+    "difficulty": "střední",
+    "question": "Hodnota výrazu $\\cos(\\frac{7\\pi}{6}) + \\sin(\\frac{4\\pi}{3})$ je:",
+    "options": [
+      "A) $-\\sqrt{3}$",
+      "B) $\\sqrt{3}$",
+      "C) $0$",
+      "D) $-1$",
+      "E) $1$"
+    ],
+    "correctIndex": 0,
+    "tip": "Kosinus $210^\\circ$ se nachází ve 3. kvadrantu, je záporný. Hodnota $-\\frac{\\sqrt{3}}{2}$. Sinus $240^\\circ$ se nachází též ve 3. kvadrantu, je také záporný. Hodnota $-\\frac{\\sqrt{3}}{2}$. Součet obou dává $-\\frac{2\\sqrt{3}}{2} = -\\sqrt{3}$."
+  },
+  {
+    "id": 45,
+    "topic": "Trigonometrie",
+    "difficulty": "střední",
+    "question": "V trojúhelníku $ABC$ je úhel $\\gamma = 60^\\circ$, strana $a = 5$ a strana $b = 8$. Délka strany $c$ (podle kosinové věty) je:",
+    "options": [
+      "A) 7",
+      "B) 9",
+      "C) $\\sqrt{39}$",
+      "D) $\\sqrt{89}$",
+      "E) $\\sqrt{129}$"
+    ],
+    "correctIndex": 0,
+    "tip": "Kosinová věta: $c^2 = a^2 + b^2 - 2ab \\cos\\gamma$. $c^2 = 25 + 64 - 2(5)(8)(1/2) = 89 - 40 = 49 \\Rightarrow c = 7$."
+  },
+  {
+    "id": 46,
+    "topic": "Obor hodnot",
+    "difficulty": "lehká",
+    "question": "Funkce $y = -2 \\sin(3x) + 1$ má obor hodnot:",
+    "options": [
+      "A) $\\langle -2; 2 \\rangle$",
+      "B) $\\langle -1; 3 \\rangle$",
+      "C) $\\langle -3; 1 \\rangle$",
+      "D) $\\langle 0; 2 \\rangle$",
+      "E) $(-\\infty; \\infty)$"
+    ],
+    "correctIndex": 1,
+    "tip": "Funkce $\\sin$ nabývá hodnot od $-1$ do $1$. Její vynásobení číslem $-2$ interval rozšíří a otočí na $\\langle -2; 2 \\rangle$. K těmto hodnotám přičítáme posun $+1$, čímž posouváme interval na $\\langle -1; 3 \\rangle$."
+  },
+  {
+    "id": 47,
+    "topic": "Převody úhlů",
+    "difficulty": "lehká",
+    "question": "Úhel $150^\\circ$ odpovídá v obloukové míře (v radiánech) hodnotě:",
+    "options": [
+      "A) $\\frac{2\\pi}{3}$",
+      "B) $\\frac{3\\pi}{4}$",
+      "C) $\\frac{5\\pi}{6}$",
+      "D) $\\frac{7\\pi}{6}$",
+      "E) $\\frac{5\\pi}{12}$"
+    ],
+    "correctIndex": 2,
+    "tip": "Vztah mezi stupni a radiány vychází z trojčlenky: $180^\\circ$ je $\\pi$. Zlomek $\\frac{150}{180} = \\frac{5}{6}$. Tedy $\\frac{5\\pi}{6}$."
+  },
+  {
+    "id": 48,
+    "topic": "Trigonometrie",
+    "difficulty": "lehká",
+    "question": "Součet dvou úhlů v trojúhelníku je roven úhlu třetímu. O jaký trojúhelník se s jistotou jedná?",
+    "options": [
+      "A) rovnostranný",
+      "B) rovnoramenný",
+      "C) pravoúhlý",
+      "D) tupoúhlý",
+      "E) nelze jednoznačně určit"
+    ],
+    "correctIndex": 2,
+    "tip": "Známe vztah pro trojúhelník: $\\alpha + \\beta + \\gamma = 180^\\circ$. Ze zadání $\\alpha + \\beta = \\gamma$. Dosazením získáme $\\gamma + \\gamma = 180^\\circ \\Rightarrow 2\\gamma = 180^\\circ \\Rightarrow \\gamma = 90^\\circ$. Trojúhelník je pravoúhlý."
+  },
+  {
+    "id": 49,
+    "topic": "Goniometrické rovnice",
+    "difficulty": "střední",
+    "question": "Řešením rovnice $\\cos^2 x - \\sin^2 x = \\frac{1}{2}$ v prvním kvadrantu je úhel $x$ rovný:",
+    "options": [
+      "A) $15^\\circ$",
+      "B) $22,5^\\circ$",
+      "C) $30^\\circ$",
+      "D) $45^\\circ$",
+      "E) $60^\\circ$"
+    ],
+    "correctIndex": 2,
+    "tip": "Identita na levé straně odpovídá kosinu dvojnásobného úhlu: $\\cos(2x) = \\frac{1}{2}$. Z toho $2x = 60^\\circ$ (nebo ekvivalent $\\pi/3$) a $x = 30^\\circ$."
+  },
+  {
+    "id": 50,
+    "topic": "Perioda funkce",
+    "difficulty": "těžká",
+    "question": "Perioda funkce $y = 5 \\operatorname{tg}(\\frac{x}{2} + \\frac{\\pi}{4})$ je:",
+    "options": [
+      "A) $\\frac{\\pi}{2}$",
+      "B) $\\pi$",
+      "C) $2\\pi$",
+      "D) $4\\pi$",
+      "E) $\\frac{\\pi}{4}$"
+    ],
+    "correctIndex": 2,
+    "tip": "Perioda pro základní funkci $\\operatorname{tg}(x)$ je $\\pi$. Pokud máme modifikaci $\\operatorname{tg}(B x)$, zmenšuje se perioda podle vzorce $P = \\frac{\\pi}{|B|}$. Zde je $B = \\frac{1}{2}$. Tedy perioda je $\\pi / \\frac{1}{2} = 2\\pi$."
+  },
+  {
+    "id": 51,
+    "topic": "Aritmetická posloupnost",
+    "difficulty": "střední",
+    "question": "V aritmetické posloupnosti platí, že $a_3 = 8$ a $a_7 = 20$. Určete součet prvních 10 členů této posloupnosti.",
+    "options": [
+      "A) 120",
+      "B) 140",
+      "C) 155",
+      "D) 160",
+      "E) 180"
+    ],
+    "correctIndex": 2,
+    "tip": "Mezi členy platí: $a_7 = a_3 + 4d \\Rightarrow 20 = 8 + 4d \\Rightarrow d = 3$. První člen vypočteme: $a_1 = a_3 - 2d = 8 - 6 = 2$. Desátý člen: $a_{10} = a_1 + 9d = 2 + 27 = 29$. Součet $S_{10} = \\frac{10(2 + 29)}{2} = 5 \\times 31 = 155$."
+  },
+  {
+    "id": 52,
+    "topic": "Geometrická posloupnost",
+    "difficulty": "střední",
+    "question": "Určete pátý člen geometrické posloupnosti, jestliže $a_2 = 6$ a $a_4 = 54$ (uvažujte posloupnost s kladným kvocientem).",
+    "options": [
+      "A) 108",
+      "B) 162",
+      "C) 216",
+      "D) 486",
+      "E) 729"
+    ],
+    "correctIndex": 1,
+    "tip": "Ve geometrické posloupnosti platí $a_4 = a_2 \\cdot q^2 \\Rightarrow 54 = 6 \\cdot q^2 \\Rightarrow 9 = q^2 \\Rightarrow q = 3$ (kladné). Pátý člen vypočteme jako $a_4 \\cdot q = 54 \\times 3 = 162$."
+  },
+  {
+    "id": 53,
+    "topic": "Nekonečná geometrická řada",
+    "difficulty": "střední",
+    "question": "Součet nekonečné geometrické řady $1 - \\frac{1}{2} + \\frac{1}{4} - \\frac{1}{8} + \\ldots$ je:",
+    "options": [
+      "A) $\\frac{1}{2}$",
+      "B) $\\frac{2}{3}$",
+      "C) $\\frac{3}{2}$",
+      "D) $2$",
+      "E) Řada nekonverguje."
+    ],
+    "correctIndex": 1,
+    "tip": "Použijeme vzorec pro nekonečnou geometrickou řadu $S = \\frac{a_1}{1 - q}$. Kvocient série se střídajícími se znaménky je $-1/2$. Výpočet: $S = \\frac{1}{1 - (-1/2)} = \\frac{1}{3/2} = \\frac{2}{3}$."
+  },
+  {
+    "id": 54,
+    "topic": "Finanční matematika",
+    "difficulty": "střední",
+    "question": "Banka úročí vklad roční úrokovou sazbou 10 % (složité úročení jednou ročně). Daň z úroku neuvažujeme. Na jaký násobek původní jistiny vzroste vklad po 2 letech?",
+    "options": [
+      "A) 1,20x",
+      "B) 1,21x",
+      "C) 1,22x",
+      "D) 1,25x",
+      "E) 1,10x"
+    ],
+    "correctIndex": 1,
+    "tip": "Podle vzorce složeného úrokování: $K_n = K_0 \\cdot (1 + p)^n$. V prvním roce $1,10 \\times K_0$, ve druhém $1,10 \\times (1,10 \\times K_0) = 1,21 \\times K_0$. Nárůst představuje 1,21-násobek."
+  },
+  {
+    "id": 55,
+    "topic": "Limity posloupností",
+    "difficulty": "lehká",
+    "question": "Člen $a_n$ posloupnosti je dán vzorcem $a_n = \\frac{2n - 1}{n + 1}$. Limita této posloupnosti pro $n \\rightarrow \\infty$ je:",
+    "options": [
+      "A) 0",
+      "B) 1",
+      "C) 2",
+      "D) $\\infty$",
+      "E) Neexistuje."
+    ],
+    "correctIndex": 2,
+    "tip": "Limita podílu polynomů se počítá v nekonečnu tak, že čitatele i jmenovatele podělíme nejvyšší mocninou $n$. $\\frac{2n/n - 1/n}{n/n + 1/n} = \\frac{2 - 0}{1 + 0} = 2$."
+  },
+  {
+    "id": 56,
+    "topic": "Rekurentní posloupnost",
+    "difficulty": "lehká",
+    "question": "Rekurentně zadaná posloupnost $a_{n+1} = a_n + 3$, s prvním členem $a_1 = 5$, má stý člen $a_{100}$ roven:",
+    "options": [
+      "A) 305",
+      "B) 302",
+      "C) 299",
+      "D) 296",
+      "E) 105"
+    ],
+    "correctIndex": 1,
+    "tip": "Rekurentní vztah definuje aritmetickou posloupnost s diferencí $d = 3$. Sto členů se vypočte podle explicitního vzorce $a_{100} = a_1 + 99 \\cdot d = 5 + 99(3) = 5 + 297 = 302$."
+  },
+  {
+    "id": 57,
+    "topic": "Procenta",
+    "difficulty": "střední",
+    "question": "Zboží bylo zlevněno o 20 % a následně nová cena klesla o dalších 25 %. Jaká je celková procentuální sleva oproti původní ceně?",
+    "options": [
+      "A) 45 %",
+      "B) 40 %",
+      "C) 35 %",
+      "D) 5 %",
+      "E) 50 %"
+    ],
+    "correctIndex": 1,
+    "tip": "Původní cena = 100 %. Zlevnění o 20 % vede k 80 % (tj. $0,8$). Zlevnění nové ceny o 25 % znamená odečtení čtvrtiny aktuální ceny. $0,8 \\times 0,25 = 0,2$. $0,8 - 0,2 = 0,6$. Konečná cena činí 60 % původní. Sleva je 40 %."
+  },
+  {
+    "id": 58,
+    "topic": "Geometrická posloupnost",
+    "difficulty": "střední",
+    "question": "Mezi čísla 4 a 108 vložte dvě čísla tak, aby s danými tvořila po sobě jdoucí členy geometrické posloupnosti. Tato vkládaná čísla jsou:",
+    "options": [
+      "A) 12 a 36",
+      "B) 16 a 64",
+      "C) 18 a 54",
+      "D) 24 a 72",
+      "E) 36 a 72"
+    ],
+    "correctIndex": 0,
+    "tip": "Tvoříme posloupnost tvaru 4, $x_1$, $x_2$, 108. Tedy $a_1=4, a_4=108$. $a_4 = a_1 \\cdot q^3 \\Rightarrow 108 = 4 \\cdot q^3 \\Rightarrow 27 = q^3 \\Rightarrow q = 3$. První vložené $4 \\times 3 = 12$, druhé $12 \\times 3 = 36$."
+  },
+  {
+    "id": 59,
+    "topic": "Finanční matematika",
+    "difficulty": "lehká",
+    "question": "Úvěr ve výši 50 000 Kč s jednoduchým úrokováním 8 % p.a. byl splacen jednorázově i s úroky přesně za půl roku. Kolik klient celkem zaplatil?",
+    "options": [
+      "A) 54 000 Kč",
+      "B) 52 000 Kč",
+      "C) 51 000 Kč",
+      "D) 50 400 Kč",
+      "E) 58 000 Kč"
+    ],
+    "correctIndex": 1,
+    "tip": "Jednoduché úrokování pro zlomkové období. Roční úrok z jistiny 50 000 je 4 000 Kč. Úrok za půl roku činí přesně poloviční částku, tedy 2 000 Kč. Klient uhradí jistinu + úrok = 52 000 Kč."
+  },
+  {
+    "id": 60,
+    "topic": "Logika a posloupnosti",
+    "difficulty": "těžká",
+    "question": "Každý den se počet nakažených virem zdvojnásobí. Osmnáctý den byla nakažena polovina obyvatelstva. Který den bude nakaženo celé obyvatelstvo?",
+    "options": [
+      "A) 19. den",
+      "B) 20. den",
+      "C) 36. den",
+      "D) Nelze určit z těchto dat.",
+      "E) 18,5. den"
+    ],
+    "correctIndex": 0,
+    "tip": "Tento myšlenkový koncept testuje hluboké pochopení geometrické progrese se základem 2. Jestliže se hodnota zdvojnásobuje s každým přidaným dnem a 18. den naplňuje celkovou kapacitu z poloviny, jediné další zdvojnásobení (následující, 19. den) naplní kapacitu celou."
+  },
+  {
+    "id": 61,
+    "topic": "Planimetrie",
+    "difficulty": "lehká",
+    "question": "Jaký je obsah kruhu opsaného obdélníku se stranami 6 cm a 8 cm?",
+    "options": [
+      "A) $10\\pi$ cm²",
+      "B) $20\\pi$ cm²",
+      "C) $25\\pi$ cm²",
+      "D) $50\\pi$ cm²",
+      "E) $100\\pi$ cm²"
+    ],
+    "correctIndex": 2,
+    "tip": "Průměr opsané kružnice obdélníku tvoří jeho úhlopříčka, kterou spočítáme jako přeponu pravoúhlého trojúhelníku: $6^2 + 8^2 = c^2 \\Rightarrow 36+64 = 100 \\Rightarrow c=10$. Poloměr je $r=5$. Obsah kruhu $S = \\pi \\cdot r^2 = 25\\pi$."
+  },
+  {
+    "id": 62,
+    "topic": "Planimetrie (Trojúhelník)",
+    "difficulty": "střední",
+    "question": "V trojúhelníku ABC leží těžiště na těžnici vedené vrcholem C. V jakém poměru dělí těžiště tuto těžnici směrem od vrcholu ke straně c?",
+    "options": [
+      "A) 1:1",
+      "B) 1:2",
+      "C) 2:1",
+      "D) 3:1",
+      "E) 3:2"
+    ],
+    "correctIndex": 2,
+    "tip": "Těžiště rozděluje každou těžnici v konstantním poměru. Vzdálenost od vrcholu ke křížení je vždy dvakrát delší než vzdálenost těžiště k příslušné straně. Poměr je tedy 2:1."
+  },
+  {
+    "id": 63,
+    "topic": "Stereometrie",
+    "difficulty": "lehká",
+    "question": "Objem pravidelného čtyřbokého jehlanu s hranou podstavy $a = 6$ cm a výškou $v = 10$ cm je:",
+    "options": [
+      "A) $360$ cm³",
+      "B) $120$ cm³",
+      "C) $180$ cm³",
+      "D) $60$ cm³",
+      "E) $240$ cm³"
+    ],
+    "correctIndex": 1,
+    "tip": "Objem jehlanu počítáme dle vzorce $V = \\frac{1}{3} S_p \\cdot v$. Podstava (čtverec) má plochu $S_p = 6 \\times 6 = 36$. Objem tak činí $\\frac{1}{3} \\cdot 36 \\cdot 10 = 120$."
+  },
+  {
+    "id": 64,
+    "topic": "Stereometrie (Podobnost)",
+    "difficulty": "střední",
+    "question": "Jestliže se poloměr koule zvětší dvakrát, její objem se zvětší:",
+    "options": [
+      "A) 2krát",
+      "B) 4krát",
+      "C) 6krát",
+      "D) 8krát",
+      "E) $\\pi$-krát"
+    ],
+    "correctIndex": 3,
+    "tip": "Objem koule je dán vzorcem $V = \\frac{4}{3}\\pi r^3$. Zvyšuje-li se lineární rozměr (poloměr) o koeficient $k$, objem reaguje s mocninou $k^3$. Tedy $2^3 = 8$."
+  },
+  {
+    "id": 65,
+    "topic": "Stereometrie",
+    "difficulty": "střední",
+    "question": "Rotační válec má objem $V$. Pokud zdvojnásobíme jeho výšku a poloměr podstavy zmenšíme na polovinu, nový objem bude:",
+    "options": [
+      "A) $V$",
+      "B) $2V$",
+      "C) $\\frac{V}{2}$",
+      "D) $\\frac{V}{4}$",
+      "E) $4V$"
+    ],
+    "correctIndex": 2,
+    "tip": "Původní válec: $V = \\pi r^2 h$. Nový válec se transformuje na $\\pi (r/2)^2 \\cdot (2h) = \\pi (r^2 / 4) \\cdot 2h = \\frac{1}{2} \\pi r^2 h = \\frac{V}{2}$."
+  },
+  {
+    "id": 66,
+    "topic": "Planimetrie (Euklidovy věty)",
+    "difficulty": "střední",
+    "question": "Euklidova věta o výšce pravoúhlého trojúhelníku uvádí vztah mezi výškou na přeponu ($v$) a úseky přepony ($c_a, c_b$) jako:",
+    "options": [
+      "A) $v = c_a + c_b$",
+      "B) $v^2 = c_a^2 + c_b^2$",
+      "C) $v = c_a \\cdot c_b$",
+      "D) $v^2 = c_a \\cdot c_b$",
+      "E) $\\frac{1}{v^2} = \\frac{1}{c_a^2} + \\frac{1}{c_b^2}$"
+    ],
+    "correctIndex": 3,
+    "tip": "Klasická Euklidova věta o výšce. Výška dělí přeponu na odseky, přičemž platí, že obsah čtverce sestrojeného nad výškou odpovídá obsahu obdélníku tvořeného úseky přepony. Matematicky $v^2 = c_a \\cdot c_b$."
+  },
+  {
+    "id": 67,
+    "topic": "Planimetrie",
+    "difficulty": "střední",
+    "question": "Jaká je délka úhlopříčky čtverce, jehož obsah je číselně roven jeho obvodu?",
+    "options": [
+      "A) 4",
+      "B) $4\\sqrt{2}$",
+      "C) 8",
+      "D) $8\\sqrt{2}$",
+      "E) 2"
+    ],
+    "correctIndex": 1,
+    "tip": "Položíme rovnítko mezi vzorce pro obsah a obvod: $a^2 = 4a$. Jediný smysluplný kořen nenulové délky je $a = 4$. Úhlopříčka se spočítá z Pythagorovy věty $u = a\\sqrt{2} = 4\\sqrt{2}$."
+  },
+  {
+    "id": 68,
+    "topic": "Planimetrie",
+    "difficulty": "lehká",
+    "question": "Obsah trojúhelníku o stranách délek 3, 4 a 5 je:",
+    "options": [
+      "A) 6",
+      "B) 7,5",
+      "C) 10",
+      "D) 12",
+      "E) Nelze určit z těchto dat."
+    ],
+    "correctIndex": 0,
+    "tip": "Konfigurace délek odpovídá Pythagorejskému trojúhelníku ($3^2 + 4^2 = 5^2$), je tedy pravoúhlý. Obsah určíme ze součinu odvěsen děleného dvěma: $S = \\frac{3 \\times 4}{2} = 6$."
+  },
+  {
+    "id": 69,
+    "topic": "Stereometrie",
+    "difficulty": "těžká",
+    "question": "Úhel sevřený dvěma sousedními stěnami pravidelného čtyřstěnu (tzv. odchylka stěn) má kosinus roven:",
+    "options": [
+      "A) 0",
+      "B) $\\frac{1}{2}$",
+      "C) $\\frac{1}{3}$",
+      "D) $\\frac{\\sqrt{3}}{2}$",
+      "E) 1"
+    ],
+    "correctIndex": 2,
+    "tip": "Odchylka stěn se určí řezem vedeným po výškách sousedních trojúhelníkových stěn. Kosinová věta v pomocném řezu uplatní výšky stěn ($v = a\\sqrt{3}/2$). Z rovnice vyjde $\\cos \\alpha = 1/3$."
+  },
+  {
+    "id": 70,
+    "topic": "Stereometrie",
+    "difficulty": "střední",
+    "question": "Podstavou kolmého hranolu je kosočtverec s úhlopříčkami $u_1 = 6, u_2 = 8$. Výška hranolu je 10. Povrch tohoto hranolu (bez podstav) – tzv. plášť – měří:",
+    "options": [
+      "A) 120",
+      "B) 160",
+      "C) 200",
+      "D) 240",
+      "E) 480"
+    ],
+    "correctIndex": 2,
+    "tip": "Ze zadaných úhlopříček odvodíme stranu kosočtverce (úhlopříčky se půlí a jsou na sebe kolmé): odvěsny 3 a 4 produkují hranu o délce 5. Obvod kosočtverce je $4 \\times 5 = 20$. Povrch pláště je obvod $\\times$ výška hranolu = $20 \\times 10 = 200$."
+  },
+  {
+    "id": 71,
+    "topic": "Vektory",
+    "difficulty": "lehká",
+    "question": "Velikost vektoru $\\vec{v} = (3; 4; 12)$ v prostoru je:",
+    "options": [
+      "A) 13",
+      "B) 15",
+      "C) 17",
+      "D) 19",
+      "E) 169"
+    ],
+    "correctIndex": 0,
+    "tip": "Skalární velikost je dána prostorovou euklidovskou normou: $\\sqrt{3^2 + 4^2 + 12^2} = \\sqrt{9 + 16 + 144} = \\sqrt{169} = 13$."
+  },
+  {
+    "id": 72,
+    "topic": "Analytická geometrie (Přímky)",
+    "difficulty": "střední",
+    "question": "Jaká je vzájemná poloha přímek $p: 2x - 3y + 5 = 0$ a $q: 4x - 6y - 10 = 0$?",
+    "options": [
+      "A) splývají",
+      "B) jsou kolmé",
+      "C) jsou rovnoběžné různé",
+      "D) jsou různoběžné, ale ne kolmé",
+      "E) jsou mimoběžné (v rovině nemožné)"
+    ],
+    "correctIndex": 2,
+    "tip": "Normálový vektor první přímky je $(2, -3)$, druhé $(4, -6)$. Tyto vektory jsou kolineární (druhý je dvojnásobkem prvního), přímky jsou tedy rovnoběžné. Pokud druhou rovnici vydělíme 2, získáme $2x - 3y - 5 = 0$. Absolutní členy se liší ($5$ vs $-5$), takže přímky nesplývají. Jsou rovnoběžné různé."
+  },
+  {
+    "id": 73,
+    "topic": "Analytická geometrie (Kružnice)",
+    "difficulty": "střední",
+    "question": "Obecná rovnice kružnice je $x^2 + y^2 - 4x + 6y - 3 = 0$. Jaký je její poloměr $r$?",
+    "options": [
+      "A) 3",
+      "B) 4",
+      "C) 5",
+      "D) 9",
+      "E) 16"
+    ],
+    "correctIndex": 1,
+    "tip": "Standardizace rovnice doplněním na čtverce. $(x^2 - 4x + 4) - 4 + (y^2 + 6y + 9) - 9 - 3 = 0$. Úprava vede k $(x-2)^2 + (y+3)^2 = 16$. Pravá strana představuje poloměr umocněný na druhou ($r^2$), proto je $r = 4$."
+  },
+  {
+    "id": 74,
+    "topic": "Analytická geometrie (Elipsa)",
+    "difficulty": "střední",
+    "question": "Střed elipsy dané rovnicí $9x^2 + 16y^2 + 18x - 64y - 71 = 0$ leží v bodě:",
+    "options": [
+      "A) $[-1; 2]$",
+      "B) $[1; -2]$",
+      "C) $[-9; 32]$",
+      "D) $[2; -1]$",
+      "E) $[-2; 1]$"
+    ],
+    "correctIndex": 0,
+    "tip": "Doplněním na čtverce získáme souřadnice středu. Osa X: $9(x^2 + 2x + 1) - 9$. Osa Y: $16(y^2 - 4y + 4) - 64$. Tím přesouváme střed do souřadnic, které tyto závorky vynulují: $x+1=0 \\Rightarrow x=-1$, a $y-2=0 \\Rightarrow y=2$."
+  },
+  {
+    "id": 75,
+    "topic": "Analytická geometrie (Parabola)",
+    "difficulty": "střední",
+    "question": "Bod $T[3; -2]$ je vrcholem paraboly. Její ohnisko je $F[3; 0]$. Rovnice její řídící přímky (direktrix) je:",
+    "options": [
+      "A) $x = 3$",
+      "B) $y = -4$",
+      "C) $y = 0$",
+      "D) $y = 2$",
+      "E) $x = -4$"
+    ],
+    "correctIndex": 1,
+    "tip": "Vrchol $V[3; -2]$, ohnisko $F[3; 0]$. Parabola se otevírá směrem nahoru. Vzdálenost vrcholu od ohniska je $p/2 = 2$. Řídicí přímka leží o tuto vzdálenost níže od vrcholu v opačném směru: $y = -2 - 2 = -4$."
+  },
+  {
+    "id": 76,
+    "topic": "Analytická geometrie",
+    "difficulty": "střední",
+    "question": "Vzdálenost bodu $A[1; 2]$ od přímky $p: 3x + 4y - 1 = 0$ činí:",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 5",
+      "E) 10"
+    ],
+    "correctIndex": 1,
+    "tip": "Dosadíme do vzorce pro vzdálenost bodu od přímky: $d = \\frac{|ax_0 + by_0 + c|}{\\sqrt{a^2 + b^2}}$. Tedy $d = \\frac{|3(1) + 4(2) - 1|}{\\sqrt{3^2 + 4^2}} = \\frac{|3 + 8 - 1|}{5} = \\frac{10}{5} = 2$."
+  },
+  {
+    "id": 77,
+    "topic": "Analytická geometrie (Přímky)",
+    "difficulty": "lehká",
+    "question": "Parametrické vyjádření přímky určené body $A[2; -1]$ a $B[4; 3]$ (pro parametr $t \\in \\mathbb{R}$) je:",
+    "options": [
+      "A) $x = 2 + 2t, \\ y = -1 + 4t$",
+      "B) $x = 4 + 2t, \\ y = 3 - 4t$",
+      "C) $x = 2 - 2t, \\ y = 1 + 4t$",
+      "D) $x = 2 + 4t, \\ y = -1 + 3t$",
+      "E) $x = 2t, \\ y = 4t$"
+    ],
+    "correctIndex": 0,
+    "tip": "Směrový vektor přímky nalezneme odečtením počátečního bodu od koncového: $B - A = (4-2; 3 - (-1)) = (2; 4)$. Parametrický zápis pro bod A a tento vektor: $x = 2+2t$, $y = -1+4t$."
+  },
+  {
+    "id": 78,
+    "topic": "Vektory",
+    "difficulty": "střední",
+    "question": "Jaký úhel svírají vektory $\\vec{a} = (1; \\sqrt{3})$ a $\\vec{b} = (\\sqrt{3}; 1)$?",
+    "options": [
+      "A) $15^\\circ$",
+      "B) $30^\\circ$",
+      "C) $45^\\circ$",
+      "D) $60^\\circ$",
+      "E) $90^\\circ$"
+    ],
+    "correctIndex": 1,
+    "tip": "Normy obou vektorů jsou rovny 2 ($\\sqrt{1^2 + (\\sqrt{3})^2} = 2$). Skalární součin tvoří $1(\\sqrt{3}) + \\sqrt{3}(1) = 2\\sqrt{3}$. Kosinus úhlu je roven $\\frac{2\\sqrt{3}}{2 \\times 2} = \\frac{\\sqrt{3}}{2}$. Úhel odpovídající této hodnotě je $30^\\circ$."
+  },
+  {
+    "id": 79,
+    "topic": "Analytická geometrie (Hyperbola)",
+    "difficulty": "těžká",
+    "question": "Rovnice hyperboly se středem v počátku a asymptotami $y = \\pm \\frac{3}{4}x$, u které hlavní vrchol leží na ose x a má vzdálenost 4 od počátku, zní:",
+    "options": [
+      "A) $\\frac{x^2}{16} - \\frac{y^2}{9} = 1$",
+      "B) $\\frac{x^2}{9} - \\frac{y^2}{16} = 1$",
+      "C) $\\frac{y^2}{16} - \\frac{x^2}{9} = 1$",
+      "D) $\\frac{x^2}{16} + \\frac{y^2}{9} = 1$",
+      "E) $\\frac{x^2}{4} - \\frac{y^2}{3} = 1$"
+    ],
+    "correctIndex": 0,
+    "tip": "Asymptoty mají rovnice $y = \\pm \\frac{b}{a}x$. Protože vrchol leží na ose x ve vzdálenosti 4, platí $a=4$. Z toho vyplývá, že $b=3$. Z rovnice dosazením získáváme jmenovatele $a^2=16$ a $b^2=9$. Rovnice je $\\frac{x^2}{16} - \\frac{y^2}{9} = 1$."
+  },
+  {
+    "id": 80,
+    "topic": "Analytická geometrie",
+    "difficulty": "střední",
+    "question": "Souřadnice průsečíku přímky $x = 1 + t, y = 2 - t$ a křivky $x^2 + y^2 = 5$ jsou tvořeny:",
+    "options": [
+      "A) dvěma různými body",
+      "B) právě jedním bodem (tečna)",
+      "C) žádným bodem (přímka křivku neprotíná)",
+      "D) nekonečně mnoha body",
+      "E) nelze analyticky určit"
+    ],
+    "correctIndex": 0,
+    "tip": "Rovnici přímky (vzhledem k $t$) substituujeme do rovnice kružnice: $(1+t)^2 + (2-t)^2 = 5 \\Rightarrow 1+2t+t^2 + 4-4t+t^2 = 5 \\Rightarrow 2t^2 - 2t + 5 = 5 \\Rightarrow 2t^2 - 2t = 0 \\Rightarrow 2t(t-1) = 0$. Kořeny jsou $t_1=0$, $t_2=1$. Získáváme 2 různé tečné body."
+  },
+  {
+    "id": 81,
+    "topic": "Kombinatorika",
+    "difficulty": "lehká",
+    "question": "Kolika způsoby lze seřadit 5 žáků (A, B, C, D, E) do zástupu tak, aby žák A stál vždy na prvním místě?",
+    "options": [
+      "A) 5",
+      "B) 16",
+      "C) 24",
+      "D) 120",
+      "E) 256"
+    ],
+    "correctIndex": 2,
+    "tip": "Student A je zafixován na prvním místě. Zůstávají 4 pozice, kam musíme rozsadit 4 zbylé studenty. Jelikož na uspořádání záleží, jedná se o permutaci 4 položek, neboli $4! = 4 \\times 3 \\times 2 \\times 1 = 24$."
+  },
+  {
+    "id": 82,
+    "topic": "Pravděpodobnost",
+    "difficulty": "střední",
+    "question": "Z balíčku 32 mariášových karet táhneme jednu kartu. Jaká je pravděpodobnost, že vytáhneme eso nebo kartu červené barvy (srdce)?",
+    "options": [
+      "A) $\\frac{12}{32}$",
+      "B) $\\frac{11}{32}$",
+      "C) $\\frac{10}{32}$",
+      "D) $\\frac{4}{32}$",
+      "E) $\\frac{1}{32}$"
+    ],
+    "correctIndex": 1,
+    "tip": "Balíček má 4 esa a 8 červených karet (srdce). Použitím principu inkluze a exkluze: $P(\\text{Eso}) + P(\\text{Červená}) - P(\\text{Červené eso})$. Tedy $(4/32) + (8/32) - (1/32) = 11/32$."
+  },
+  {
+    "id": 83,
+    "topic": "Pravděpodobnost",
+    "difficulty": "střední",
+    "question": "V osudí je 5 bílých a 3 černé kuličky. Táhneme dvě kuličky současně. Pravděpodobnost, že obě budou bílé, je:",
+    "options": [
+      "A) $\\frac{5}{14}$",
+      "B) $\\frac{25}{64}$",
+      "C) $\\frac{10}{28}$",
+      "D) $\\frac{5}{8}$",
+      "E) $\\frac{5}{12}$"
+    ],
+    "correctIndex": 0,
+    "tip": "Tažení současně se matematicky rovná tažení dvakrát bez vracení. Pravděpodobnost pro 1. kuličku je $5/8$. Následně zbývá 7 kuliček a z toho 4 bílé, pravděpodobnost je $4/7$. Součin $(5/8) \\times (4/7) = 20/56 = 5/14$."
+  },
+  {
+    "id": 84,
+    "topic": "Kombinatorika",
+    "difficulty": "lehká",
+    "question": "Hodnota kombinačního čísla $\\binom{100}{98}$ je:",
+    "options": [
+      "A) 9800",
+      "B) 4900",
+      "C) 4950",
+      "D) 5000",
+      "E) 10000"
+    ],
+    "correctIndex": 2,
+    "tip": "Využijeme vlastnost kombinačních čísel $\\binom{n}{k} = \\binom{n}{n-k}$. Tedy $\\binom{100}{98} = \\binom{100}{2}$. Rozklad dle definice: $\\frac{100 \\times 99}{2 \\times 1} = 50 \\times 99 = 4950$."
+  },
+  {
+    "id": 85,
+    "topic": "Pravděpodobnost",
+    "difficulty": "střední",
+    "question": "Ve třídě zkoušíme tři žáky. Pravděpodobnost, že libovolný žák bude znát odpověď, je $0,8$. Pravděpodobnost, že ani jeden ze tří zkoušených žáků nezodpoví otázku, je:",
+    "options": [
+      "A) $0,008$",
+      "B) $0,2$",
+      "C) $0,4$",
+      "D) $0,6$",
+      "E) $0,512$"
+    ],
+    "correctIndex": 0,
+    "tip": "Hledáme komplementární pravděpodobnost. Šance neúspěchu jednotlivce je $1 - 0,8 = 0,2$. Pro souběh těchto navzájem nezávislých neúspěchů se pravděpodobnosti násobí: $(0,2)^3 = 0,008$."
+  },
+  {
+    "id": 86,
+    "topic": "Statistika",
+    "difficulty": "lehká",
+    "question": "Je dána číselná řada hodnot: 3, 5, 5, 6, 8, 9, 10. Medián tohoto souboru je:",
+    "options": [
+      "A) 5",
+      "B) 6",
+      "C) 6,5",
+      "D) 7",
+      "E) 8"
+    ],
+    "correctIndex": 1,
+    "tip": "Medián vyjadřuje centrální hodnotu po seřazení velikostí prvků. Pro liché zastoupení ($N=7$) vybíráme prostřední prvek. Na 4. pozici v seřazené řadě je číslo 6."
+  },
+  {
+    "id": 87,
+    "topic": "Kombinatorika",
+    "difficulty": "střední",
+    "question": "Heslo do počítače se skládá ze tří různých písmen (vybíráme z 26 písmen abecedy) a následně ze dvou různých cifer (0-9). Kolik různých hesel lze teoreticky vytvořit?",
+    "options": [
+      "A) $26^3 \\cdot 10^2$",
+      "B) $\\binom{26}{3} \\cdot \\binom{10}{2}$",
+      "C) $(26 \\cdot 25 \\cdot 24) + (10 \\cdot 9)$",
+      "D) $(26 \\cdot 25 \\cdot 24) \\cdot (10 \\cdot 9)$",
+      "E) $3 \\cdot 26 + 2 \\cdot 10$"
+    ],
+    "correctIndex": 3,
+    "tip": "Využito pravidlo součinu pro posloupnost nezávislých událostí bez opakování (variace bez opakováni). 3 volby znaku = $26 \\times 25 \\times 24$. Navazující výběr cifry $10 \\times 9$. Zkombinujeme násobením."
+  },
+  {
+    "id": 88,
+    "topic": "Binomická věta",
+    "difficulty": "těžká",
+    "question": "Třetí člen binomického rozvoje $(x + 2)^5$ (při klasickém řazení od nejvyšší mocniny $x$) obsahuje proměnnou a koeficient ve tvaru:",
+    "options": [
+      "A) $40x^3$",
+      "B) $10x^3$",
+      "C) $80x^2$",
+      "D) $40x^2$",
+      "E) $10x^2$"
+    ],
+    "correctIndex": 0,
+    "tip": "Třetí člen (index $k=2$) se počítá v binomické větě pomocí $\\binom{n}{k}A^{n-k}B^{k}$. Počítáme $\\binom{5}{2} x^3 2^2$. Kombinační číslo je $5 \\times 4 / 2 = 10$. Celý výraz: $10 \\cdot x^3 \\cdot 4 = 40x^3$."
+  },
+  {
+    "id": 89,
+    "topic": "Statistika a logika",
+    "difficulty": "střední",
+    "question": "Aritmetický průměr čtyř různých přirozených čísel je 10. Jaká je největší možná hodnota, kterou může jedno z těchto čísel nabýt?",
+    "options": [
+      "A) 10",
+      "B) 34",
+      "C) 37",
+      "D) 40",
+      "E) 100"
+    ],
+    "correctIndex": 1,
+    "tip": "Součet čtveřice dosahuje hodnoty 40. Abychom získali maximální hodnotu jednoho z nich, musí zbývající tři být co nejmenší možná různá přirozená čísla (1, 2 a 3). Hledané číslo je $40 - (1+2+3) = 40 - 6 = 34$."
+  },
+  {
+    "id": 90,
+    "topic": "Binomická věta",
+    "difficulty": "střední",
+    "question": "Jaký je koeficient u členu $x^4$ v polynomu, který vznikne umocněním $(x - 1)^6$?",
+    "options": [
+      "A) 15",
+      "B) -15",
+      "C) 20",
+      "D) 6",
+      "E) -6"
+    ],
+    "correctIndex": 0,
+    "tip": "Pro získání $x^4$ ze závorky umocněné na šestou použijeme binomickou větu s indexem $k=2$. Výraz s příslušným exponentem: $\\binom{6}{2}(x)^4(-1)^2 = 15 \\cdot x^4 \\cdot 1$. Koeficient je kladných 15."
+  },
+  {
+    "id": 91,
+    "topic": "Komplexní čísla",
+    "difficulty": "střední",
+    "question": "Komplexní číslo $z = \\frac{1 + 2i}{1 - i}$ má ve svém algebraickém tvaru imaginární část rovnou:",
+    "options": [
+      "A) $\\frac{1}{2}$",
+      "B) $-\\frac{1}{2}$",
+      "C) $\\frac{3}{2}$",
+      "D) $-\\frac{3}{2}$",
+      "E) $2$"
+    ],
+    "correctIndex": 2,
+    "tip": "Zlomek racionalizujeme vynásobením číslem komplexně sdruženým ke jmenovateli: $\\frac{1+2i}{1-i} \\cdot \\frac{1+i}{1+i} = \\frac{(1+2i)(1+i)}{1^2 - i^2} = \\frac{1 + i + 2i - 2}{2} = \\frac{-1 + 3i}{2} = -\\frac{1}{2} + \\frac{3}{2}i$. Imaginární část je $\\frac{3}{2}$."
+  },
+  {
+    "id": 92,
+    "topic": "Komplexní čísla",
+    "difficulty": "lehká",
+    "question": "Absolutní hodnota komplexního čísla $z = -3 + 4i$ je:",
+    "options": [
+      "A) 1",
+      "B) 5",
+      "C) 7",
+      "D) 25",
+      "E) $\\sqrt{7}$"
+    ],
+    "correctIndex": 1,
+    "tip": "Definice absolutní hodnoty vychází z Pythagorovy věty v Gaussově rovině: $|z| = \\sqrt{a^2 + b^2}$. Výpočet: $\\sqrt{(-3)^2 + 4^2} = \\sqrt{9+16} = 5$."
+  },
+  {
+    "id": 93,
+    "topic": "Komplexní čísla (Gaussova rovina)",
+    "difficulty": "střední",
+    "question": "V Gaussově rovině představuje rovnice $|z - (2 + 3i)| = 5$ množinu bodů, která je:",
+    "options": [
+      "A) polorovinou",
+      "B) přímkou",
+      "C) kruhem o poloměru 5",
+      "D) kružnicí se středem v $[2; 3]$ a poloměrem 5",
+      "E) parabolou s vrcholem v $[2; 3]$"
+    ],
+    "correctIndex": 3,
+    "tip": "Rovnice říká, že vzdálenost bodu $z$ od bodu $[2; 3]$ je přesně rovna 5. Jelikož zde není znak nerovnosti (který by definoval kruh - plochu), množinou bodů splňujících tuto podmínku je kružnice."
+  },
+  {
+    "id": 94,
+    "topic": "Komplexní čísla",
+    "difficulty": "střední",
+    "question": "Vyjádření komplexního čísla $z = 2i$ v goniometrickém tvaru je:",
+    "options": [
+      "A) $2(\\cos \\pi + i \\sin \\pi)$",
+      "B) $2(\\cos \\frac{\\pi}{2} + i \\sin \\frac{\\pi}{2})$",
+      "C) $2(\\cos 0 + i \\sin 0)$",
+      "D) $\\cos \\frac{\\pi}{2} + i \\sin \\frac{\\pi}{2}$",
+      "E) $2(\\cos \\frac{3\\pi}{2} + i \\sin \\frac{3\\pi}{2})$"
+    ],
+    "correctIndex": 1,
+    "tip": "Číslo $2i$ je ryze imaginární a leží na kladné poloose y. Jeho absolutní hodnota (amplituda) je 2. Úhel, který svírá s kladnou poloosou x, je $90^\\circ$, tedy $\\pi/2$. Tvar je $2(\\cos \\frac{\\pi}{2} + i \\sin \\frac{\\pi}{2})$."
+  },
+  {
+    "id": 95,
+    "topic": "Moivreova věta",
+    "difficulty": "střední",
+    "question": "Podle Moivreovy věty je hodnota výrazu $(\\cos \\frac{\\pi}{6} + i \\sin \\frac{\\pi}{6})^3$ rovna:",
+    "options": [
+      "A) $i$",
+      "B) $-i$",
+      "C) 1",
+      "D) $-1$",
+      "E) $\\frac{\\sqrt{3}}{2} + \\frac{1}{2}i$"
+    ],
+    "correctIndex": 0,
+    "tip": "Pro umocnění goniometrického tvaru komplexního čísla se podle Moivreovy věty úhel vynásobí exponentem. $\\frac{\\pi}{6} \\times 3 = \\frac{\\pi}{2}$. Výsledek: $\\cos(\\frac{\\pi}{2}) + i \\sin(\\frac{\\pi}{2}) = 0 + 1i = i$."
+  },
+  {
+    "id": 96,
+    "topic": "Slovní úlohy (Společná práce)",
+    "difficulty": "střední",
+    "question": "Dvě čerpadla naplní nádrž za 4 hodiny. První čerpadlo, když pracuje samo, naplní nádrž za 6 hodin. Za kolik hodin by nádrž naplnilo samotné druhé čerpadlo?",
+    "options": [
+      "A) 8 hodin",
+      "B) 10 hodin",
+      "C) 12 hodin",
+      "D) 14 hodin",
+      "E) 2 hodiny"
+    ],
+    "correctIndex": 2,
+    "tip": "První čerpadlo vykonává $1/6$ práce za hodinu. Obě dohromady $1/4$ za hodinu. Rovnice pro společnou práci: $\\frac{1}{6} + \\frac{1}{y} = \\frac{1}{4}$. Řešením této rovnice získáme $y = 12$ hodin."
+  },
+  {
+    "id": 97,
+    "topic": "Slovní úlohy (Pohyb)",
+    "difficulty": "střední",
+    "question": "Z města A vyjelo do města B auto rychlostí 60 km/h. O půl hodiny později za ním vyjelo z města A motocykl rychlostí 80 km/h. V jaké vzdálenosti od města A motocykl auto dožene?",
+    "options": [
+      "A) 60 km",
+      "B) 80 km",
+      "C) 100 km",
+      "D) 120 km",
+      "E) 150 km"
+    ],
+    "correctIndex": 3,
+    "tip": "Auto ujede za půl hodiny náskok 30 km. Rozdíl rychlostí je $80 - 60 = 20$ km/h. Těchto 30 km dožene motocykl za $30 / 20 = 1,5$ hodiny. Za tuto dobu motocykl ujede $80 \\times 1,5 = 120$ km."
+  },
+  {
+    "id": 98,
+    "topic": "Slovní úlohy (Směsi)",
+    "difficulty": "střední",
+    "question": "Ze dvou druhů kávy v cenách 150 Kč/kg a 200 Kč/kg byla vytvořena směs 10 kg v celkové hodnotě 1700 Kč. Kolik kilogramů dražší kávy směs obsahovala?",
+    "options": [
+      "A) 3 kg",
+      "B) 4 kg",
+      "C) 5 kg",
+      "D) 6 kg",
+      "E) 7 kg"
+    ],
+    "correctIndex": 1,
+    "tip": "Označme množství dražší kávy jako $x$. Pak levnější je $(10-x)$. Sestavíme rovnici pro celkovou cenu: $200x + 150(10-x) = 1700$. Po úpravě: $200x + 1500 - 150x = 1700 \\Rightarrow 50x = 200 \\Rightarrow x = 4$."
+  },
+  {
+    "id": 99,
+    "topic": "Logika (Binární operace)",
+    "difficulty": "střední",
+    "question": "Pokud $x \\oplus y = 2x - y^2$ definuje novou binární operaci na množině reálných čísel, pak hodnota výrazu $3 \\oplus (4 \\oplus 2)$ je:",
+    "options": [
+      "A) $-26$",
+      "B) $-10$",
+      "C) 2",
+      "D) 6",
+      "E) 14"
+    ],
+    "correctIndex": 1,
+    "tip": "Nejprve vypočítáme závorku: $(4 \\oplus 2) = 2(4) - 2^2 = 8 - 4 = 4$. Poté výsledek dosadíme do vnější operace: $3 \\oplus 4 = 2(3) - 4^2 = 6 - 16 = -10$."
+  },
+  {
+    "id": 100,
+    "topic": "Logika a kombinatorika",
+    "difficulty": "těžká",
+    "question": "Kniha má 500 stran očíslovaných 1 až 500. Kolikrát byla při číslování stran použita číslice 7?",
+    "options": [
+      "A) 50",
+      "B) 95",
+      "C) 100",
+      "D) 105",
+      "E) 150"
+    ],
+    "correctIndex": 2,
+    "tip": "Spočítáme výskyt v jedné stovce (např. 1-100). Na místě jednotek se 7 objeví 10x. Na místě desítek (70-79) také 10x. V každé stovce je tedy 20 výskytů. Do čísla 500 máme takových stovek pět (žádná nezačíná cifrou 7). Celkem $20 \\times 5 = 100$ výskytů."
+  }
+]

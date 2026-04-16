@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCIO Math Prep</title>
+    
+    <!-- KaTeX for Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="prep-main">
+        <div class="question-container">
+            <h1 id="question-text">Načítání...</h1>
+        </div>
+
+        <div id="options-container" class="options-list">
+            <!-- Options will be generated dynamically by app.js -->
+        </div>
+
+        <div class="action-container">
+            <!-- Buttons are hidden by default until an option is clicked -->
+            <button id="check-btn" class="primary-btn hidden">Zkontrolovat</button>
+            <button id="next-btn" class="secondary-btn hidden">Další otázka</button>
+        </div>
+
+        <section id="solution-section" class="solution-section hidden">
+            <h2 class="solution-title">Řešení:</h2>
+            <p id="solution-text" class="solution-text"></p>
+        </section>
+    </main>
+</body>
+</html>
